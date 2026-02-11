@@ -1,3 +1,5 @@
+# Settings
+appsettings.local.json
 
 # Playwright
 node_modules/

@@ -1,15 +1,25 @@
 {
   "name": "testframework_ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Test framework in TypeScript using Playwright",
+  "scripts": {
+    "lint": "eslint \"tests/**/*.ts\" \"playwright.config.ts\"",
+    "test": "playwright test",
+    "show-report": "playwright show-report"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Michał Janiszewski",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.2.2"
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^25.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-playwright": "^1.8.0",
+    "globals": "^15.15.0"
   }
 }

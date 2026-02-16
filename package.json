@@ -4,6 +4,7 @@
   "description": "Test framework in TypeScript using Playwright",
   "scripts": {
     "lint": "eslint \"tests/**/*.ts\" \"playwright.config.ts\"",
+    "format": "prettier --write \"tests/**/*.ts\" \"playwright.config.ts\"",
     "test": "playwright test",
     "show-report": "playwright show-report"
   },
